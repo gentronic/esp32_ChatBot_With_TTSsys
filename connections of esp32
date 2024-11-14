@@ -1,0 +1,40 @@
+Connections:
+
+1. ESP32 WROOM 32 (Development Board):
+
+GPIO 26 (I2S_LRC) → Pin 1 (Left Channel Input) of PAM8403.
+
+GPIO 27 (I2S_BCLK) → Pin 3 (Right Channel Input) of PAM8403.
+
+GPIO 25 (I2S_DOUT) → Pin 2 (Ground) of PAM8403.
+
+5V → Pin 4 (5V) of PAM8403.
+
+GND → Pin 5 (Ground) of PAM8403.
+
+
+
+2. PAM8403 Audio Amplifier:
+
+Pin 1 (Left Channel Positive) → Speaker Left Positive (+).
+
+Pin 2 (Left Channel Negative) → Speaker Left Negative (-).
+
+Pin 3 (Right Channel Positive) → Speaker Right Positive (+) (if using stereo speakers).
+
+Pin 4 (Right Channel Negative) → Speaker Right Negative (-) (if using stereo speakers).
+
+
+
+3. Speaker (Small Phone Speaker or 8Ω speaker):
+
+Connect to Pin 1 and Pin 2 for left output (mono), or Pin 1 and Pin 3 for stereo output.
+
+
+
+4. Powering the ESP32 and PAM8403:
+
+ESP32 powered via USB.
+
+PAM8403 powered through 5V pin from the ESP32.
+
